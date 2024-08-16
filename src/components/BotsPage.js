@@ -24,7 +24,7 @@ function BotsPage({botCollection, setBotCollection, setCheckBotCollection}) {
   function dischargeBot(bot){
     setBotCollection(botCollection.filter((item)=> item.id !== bot.id));
     removeBot(bot)
-    fetch (`http://localhost:8002/bots/${bot.id}`, {
+    fetch (`http://localhost:3000/bots/${bot.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type" : "application/json",

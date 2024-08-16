@@ -7,7 +7,7 @@ function App() {
 
   // rendering bot profiles using useEffect hook
   useEffect(() => {
-    fetch("http://localhost:8002/bots")
+    fetch("http://localhost:3000/bots")
         .then((response) => response.json())
         .then((bots) => {
             console.log(bots);
